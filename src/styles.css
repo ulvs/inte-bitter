@@ -1,0 +1,42 @@
+/* Bakgrund och grundstil */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1e1e1e; /* Mörk bakgrund */
+    color: #f0f0f0; /* Ljus text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Se till att det täcker hela skärmen */
+  }
+  
+  /* Header-stil */
+  header {
+    text-align: center;
+    background-color: transparent;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #ffcc00; /* Elegant guldaccent */
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: capitalize; /* Gör första bokstaven versal */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Mjuk skugga för högtidlig känsla */
+    animation: fadeIn 2s ease-in-out; /* Lägger till en mjuk in-animering */
+  }
+  
+  /* Nyckelframes för mjuk in-animering */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
