@@ -20,15 +20,23 @@ body {
   h1 {
     font-size: 3.5rem;
     font-weight: 400;
-    color: #ffcc00; /* Elegant guldaccent */
+    color: #ffcc00; 
     letter-spacing: 2px;
     margin: 0;
-    text-transform: capitalize; /* Gör första bokstaven versal */
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Mjuk skugga för högtidlig känsla */
-    animation: fadeIn 2s ease-in-out; /* Lägger till en mjuk in-animering */
+    text-transform: capitalize; 
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+    animation: fadeIn 2s ease-in-out; 
+  }
+  .hidden-message {
+    font-size: 6px; /* Mycket liten text */
+    color: #f0f0f0; /* Nästan samma färg som bakgrunden */
+    position: fixed; /* Fäster texten i fönstret */
+    bottom: 5px; /* Håll texten 5px från botten */
+    left: 50%; /* Placera i mitten horisontellt */
+    transform: translateX(-50%); /* Justera så att texten är helt centrerad */
+    opacity: 0.5; /* Lätt genomskinlighet */
   }
   
-  /* Nyckelframes för mjuk in-animering */
   @keyframes fadeIn {
     from {
       opacity: 0;

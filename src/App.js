@@ -65,6 +65,7 @@ function App() {
         <h1 className="drink-name">{randomDrink}</h1>
         <p className="drink-tagline">Är inte en bitter...</p>
       </header>
+      <p class="hidden-message">EN SIDA UTAN MENING</p>
     </div>
   );
 }
